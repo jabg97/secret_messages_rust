@@ -1,0 +1,7 @@
+[package]
+name = "secret_messages_rust"
+version = "0.1.0"
+authors = ["jabg97"]
+edition = "2018"
+
+[dependencies]

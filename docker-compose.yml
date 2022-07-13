@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  rust:
+    container_name: secret_messages_rust
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    volumes: 
+      - .:/home/rust
+    command: "bash"
+    tty: true #to make it continue running and not stop
+    environment:
+      - USER=$USER
